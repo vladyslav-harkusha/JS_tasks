@@ -1,7 +1,9 @@
 // 1) #67kfznmiMl
 //    Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
 const arr1 = [34, 'rabbit', false, NaN, undefined, null, 88, true, '100500', 100500];
-console.log(arr1);
+console.log(
+	arr1[0], arr1[1], arr1[2], arr1[3], arr1[4], arr1[5], arr1[6], arr1[7], arr1[8], arr1[9]
+);
 
 
 // 2) #LARqoUj5I
