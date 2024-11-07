@@ -250,7 +250,6 @@ let usersList = [
 ];
 
 
-
 document.write('<div class="users-box">');
 for (const user of usersList) {
 	document.write(`
