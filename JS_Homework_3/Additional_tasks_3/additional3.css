@@ -1,0 +1,28 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+ }
+ .wrap {
+     display: grid;
+     grid-template-columns: repeat(5, 17vw);
+     gap: 25px;
+     justify-content: center;
+     margin-top: 25px;
+ }
+ .post-card {
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     text-align: center;
+     border: 3px dotted darkgoldenrod;
+     padding: 5px;
+     background-color: wheat;
+ }
+ .post-card h3 {
+     color: #004f4f;
+ }
+ .post-card p {
+     color: teal;
+ }
