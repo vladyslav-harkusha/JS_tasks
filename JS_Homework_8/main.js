@@ -63,5 +63,5 @@ const coursesAndDurationArray = [
 	{title: 'Frontend', monthDuration: 4}
 ];
 
-const coursesWithId = coursesAndDurationArray.map((course, index) => ({ id: String(Math.random()).slice(2), ...course  }));
+const coursesWithId = coursesAndDurationArray.map(course => ({ id: String(Math.random()).slice(2), ...course  }));
 console.log(coursesWithId);
