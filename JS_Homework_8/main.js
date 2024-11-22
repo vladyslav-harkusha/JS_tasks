@@ -18,7 +18,8 @@ function createDeepCopy(originObject) {
 
 	for (const key in originObject) {
 		if (typeof originObject[key] === 'function') {
-			deepCopy[key] = eval(String(originObject[key]));
+			// deepCopy[key] = eval(String(originObject[key]));
+			deepCopy[key] = originObject[key].bind();
 		} else {
 			deepCopy[key] = createDeepCopy(originObject[key]);
 		}
@@ -35,7 +36,10 @@ const testObj = {
 		HTML: 80,
 		react: 99
 	},
-	greeting: (name) => console.log(`hello ${name}`)
+	// greeting: (name) => console.log(`hello ${name}`)
+	greeting(name) {
+		console.log(`hello ${name}`);
+	}
 }
 console.log(testObj);
 testObj.greeting('John');
