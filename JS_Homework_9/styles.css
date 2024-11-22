@@ -1,0 +1,27 @@
+* {
+    font-family: Arial, sans-serif;
+}
+.wrap {
+    background-color: wheat;
+    color: teal;
+    font-size: 32px;
+    padding: 10px;
+    width: fit-content;
+}
+.list {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+}
+.item {
+    background-color: #d28cd2;
+    padding: 10px;
+}
+.heading {
+    color: #676767;
+}
+.description {
+    font-size: 24px;
+    color: white;
+}
